@@ -19,6 +19,7 @@ public class Main extends JPanel{
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
+        
         // Pinta o background de preto
         g.setColor(Color.BLACK);
         g.fillRect(xOffSet,yOffSet, grid_w, grid_h);
@@ -78,6 +79,7 @@ public class Main extends JPanel{
         frame.setVisible(true);
 
         regra(s, choice);
+        frame.repaint();
     }
 
     /* Determina a configuração das células (Vivas ou mortas) a cada iteração baseando-se na regra escolhida
